@@ -14,4 +14,5 @@ class ClientTableSeeder extends Seeder
         \CodeProject\Client::truncate();
         factory(\CodeProject\Client::class, 10)->create();
     }
+    
 }
