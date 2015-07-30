@@ -24,5 +24,7 @@ class CodeProjectRepositoryProvider extends ServiceProvider
     public function register()
     {
         $this->app->bind(\CodeProject\Repositories\ClientRepository::class, \CodeProject\Repositories\ClientRepositoryEloquent::Class);
+
+        $this->app->bind(\CodeProject\Repositories\ProjectRepository::class, \CodeProject\Repositories\ProjectRepositoryEloquent::Class);
     }
 }
