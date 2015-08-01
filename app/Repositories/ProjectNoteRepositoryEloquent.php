@@ -1,10 +1,10 @@
 <?php
 
-namespace App\Repositories;
+namespace CodeProject\Repositories;
 
 use Prettus\Repository\Eloquent\BaseRepository;
 use Prettus\Repository\Criteria\RequestCriteria;
-use App\Entities\ProjectNote;
+use CodeProject\Entities\ProjectNote;
 
 /**
  * Class ProjectNoteRepositoryEloquent

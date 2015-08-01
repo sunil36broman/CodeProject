@@ -2,28 +2,28 @@
 
 namespace CodeProject\Http\Controllers;
 
-use CodeProject\Repositories\ClientRepository;
-use CodeProject\Services\ClientService;
+use CodeProject\Repositories\ProjectNoteRepository;
+use CodeProject\Services\ProjectNoteService;
 use Illuminate\Http\Request;
 
 use CodeProject\Http\Requests;
 
 
-class ClientController extends Controller
+class ProjectNoteController extends Controller
 {
 
     /**
-     * @var ClientRepository
+     * @var ProjectNoteRepository
      */
     private $repository;
 
     /**
-     * @var ClientService
+     * @var ProjectNoteService
      */
     private $service;
 
 
-    public function __construct(ClientRepository $repository, ClientService $service) {
+    public function __construct(ProjectNoteRepository $repository, ProjectNoteService $service) {
         $this->repository = $repository;
         $this->service = $service;
     }
